@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace fizzbuzz1
@@ -17,33 +18,43 @@ namespace fizzbuzz1
                 string myFizzystring = "";
                 string three = "Fizz";
                 string five = "Buzz";
+                string seven = "Bang";
 
-                if (i % 3 == 0 && i % 5 == 0)
+                if (i % 3 == 0 && i % 7 == 0)
                 {
-                    Console.WriteLine(myFizzystring += three + five);
+                    myFizzystring += three + seven + "\n";
+                }
+                else if (i % 3 == 0 && i % 5 == 0)
+                {
+                    myFizzystring += three + five + "\n";
+                }
+                else if (i % 5 == 0 && i % 7 == 0)
+                {
+                    myFizzystring += five + seven + "\n";
                 }
                 else if (i % 3 == 0)
                 {
-                    Console.WriteLine(myFizzystring += three);
+                    myFizzystring += three + "\n";
                 }
-
                 else if (i % 5 == 0)
                 {
-                    Console.WriteLine(myFizzystring += five);
+                    myFizzystring += five + "\n";
                 }
-                
+                else if (i % 7 == 0)
+                {
+                    myFizzystring += seven + "\n";
+                }
                 else
                 {
                     Console.WriteLine(i);
                 }
                 
-                //if ( i % 7 == 0 && i % 5 == 0 && i % 3 == 0){
-                //    Console.WriteLine("fizzbuzzbang");
-                //}
+                
+                Console.Write(myFizzystring);
+
             }
             
             /*String myString = "Fizz";
-
             myString += "Buzz";
             StringBuilder myStringBuilder = new StringBuilder();
             myStringBuilder.Append("Fizz");

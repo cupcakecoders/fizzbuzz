@@ -15,22 +15,21 @@ namespace fizzbuzz1
             for (int i=1; i <= 100; i++)
             {
                 string myFizzystring = "";
+                string three = "Fizz";
+                string five = "Buzz";
 
                 if (i % 3 == 0 && i % 5 == 0)
                 {
-                    myFizzystring += "fizz" + "buzz";
-                    Console.WriteLine(myFizzystring);
+                    Console.WriteLine(myFizzystring += three + five);
                 }
                 else if (i % 3 == 0)
                 {
-                    myFizzystring += "fizz";
-                    Console.WriteLine(myFizzystring);
+                    Console.WriteLine(myFizzystring += three);
                 }
 
                 else if (i % 5 == 0)
                 {
-                    myFizzystring += "buzz";
-                    Console.WriteLine(myFizzystring);
+                    Console.WriteLine(myFizzystring += five);
                 }
                 
                 else

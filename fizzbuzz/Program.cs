@@ -19,6 +19,7 @@ namespace fizzbuzz1
                 string three = "Fizz";
                 string five = "Buzz";
                 string seven = "Bang";
+                string eleven = "Bong";
 
                 if (i % 3 == 0 && i % 7 == 0)
                 {
@@ -31,6 +32,10 @@ namespace fizzbuzz1
                 else if (i % 5 == 0 && i % 7 == 0)
                 {
                     myFizzystring += five + seven + "\n";
+                }
+                else if (i % 11 == 0)
+                {
+                    myFizzystring += eleven + "\n";
                 }
                 else if (i % 3 == 0)
                 {
@@ -59,6 +64,7 @@ namespace fizzbuzz1
             StringBuilder myStringBuilder = new StringBuilder();
             myStringBuilder.Append("Fizz");
             */
+            
         }
     }
 }
